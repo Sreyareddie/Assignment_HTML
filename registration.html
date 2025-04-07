@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        padding: 0;
+        margin: 0;
+      }
+      form {
+        border-radius: 10px;
+        padding: 20px;
+        background-color: rgba(242, 242, 242, 0.925);
+        margin: auto;
+        width: fit-content;
+      }
+      label {
+        font-size: 1.25rem;
+      }
+      input {
+        font-size: 1.25rem;
+      }
+      input[type="tel"] {
+        width: 200px;
+      }
+      input[type="submit"] {
+        background-color: rgb(168, 212, 236);
+        display: block;
+        padding: 10px 45px;
+        border-radius: 10px;
+        border: none;
+        margin: 15px auto;
+      }
+      input[type="submit"]:hover {
+        color: white;
+        background-color: rgb(64, 121, 161);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body background="./assets/JobHome.jpg">
+    <form>
+      <table cellpadding="10px">
+        <caption style="font-size: x-large">
+          Registration
+        </caption>
+        <tbody>
+          <tr>
+            <td>
+              <label for="name">Name</label>
+            </td>
+            <td>
+              <input type="text" name="name" id="name" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email</label>
+            </td>
+            <td>
+              <input type="email" name="email" id="email" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Password</label>
+            </td>
+            <td>
+              <input type="password" name="password" id="password" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="confirmpassword">Confirm Password</label>
+            </td>
+            <td>
+              <input
+                type="password"
+                name="confirmpassword"
+                id="confirmpassword"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="gender">Gender</label>
+            </td>
+            <td>
+              <label for="Male">Male</label>
+              <input
+                type="radio"
+                name="gender"
+                id="Male"
+                value="Male"
+                required
+              />
+              <label for="Female">Female</label>
+              <input
+                type="radio"
+                name="gender"
+                id="Female"
+                value="Female"
+                required
+              />
+              <label for="Others">Others</label>
+              <input
+                type="radio"
+                name="gender"
+                id="Others"
+                value="Others"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone">Phone</label>
+            </td>
+            <td>
+              <select name="phone" id="countrycode" required>
+                <option value="+91">+91</option>
+                <option value="+1">+1</option>
+                <option value="+61">+61</option>
+                <option value="+44">+44</option>
+              </select>
+              <input type="tel" name="phone" id="phone" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="dob">Date Of Birth</label>
+            </td>
+            <td>
+              <input type="date" name="dob" id="dob" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="skills">Skills</label>
+            </td>
+            <td>
+              <label for="Java">Java</label
+              ><input type="checkbox" name="skills" id="Java" />
+              <label for="Python">Python</label
+              ><input type="checkbox" name="skills" id="Python" />
+              <label for="JavaScript">JavaScript</label
+              ><input type="checkbox" name="skills" id="JavaScript" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="photo">Upload Profile Photo</label>
+            </td>
+            <td>
+              <input type="file" name="photo" id="photo" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="resume">Upload Resume</label>
+            </td>
+            <td>
+              <input type="file" name="resume" id="resume" required />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="submit" name="Submit" value="Register" />
+    </form>
+  </body>
+</html>
